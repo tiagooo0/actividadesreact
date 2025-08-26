@@ -1,1 +1,24 @@
+/* Tailwind v4 */
 @import "tailwindcss";
+
+/* Si el editor se queja de @apply/@utility, ayuda esto: */
+@reference "tailwindcss";
+
+/* Tus estilos (ahora sí puedes usar @apply) */
+:root { --radius: 12px; }
+
+body { @apply bg-zinc-50 text-zinc-800 antialiased; }
+
+.app-container { @apply max-w-3xl mx-auto p-6 md:p-8; }
+.section-title { @apply text-2xl font-semibold mb-4; }
+.card { @apply bg-white border border-zinc-200 rounded-[var(--radius)] shadow-sm p-5; }
+.card-muted { @apply bg-zinc-100 border-transparent; }
+.btn { @apply inline-flex items-center justify-center gap-2 rounded-lg px-3.5 py-2.5 text-sm font-medium transition border border-zinc-300 bg-white hover:bg-zinc-100 active:scale-[0.99]; }
+.btn-primary { @apply border-transparent bg-zinc-900 text-white hover:bg-zinc-800; }
+.btn-ghost { @apply border-transparent bg-transparent hover:bg-zinc-100; }
+.input { @apply w-full rounded-lg border border-zinc-300 bg-white px-3 py-2 text-sm outline-none focus:ring-2 focus:ring-zinc-300 focus:border-zinc-400; }
+.checkbox { @apply h-4 w-4 rounded border-zinc-300 text-zinc-900 focus:ring-zinc-300; }
+.stack { @apply grid gap-3; }
+.row { @apply flex items-center gap-2; }
+.kicker { @apply text-xs uppercase tracking-wider text-zinc-500; }
+.divider { @apply h-px w-full bg-zinc-200 my-4; }
