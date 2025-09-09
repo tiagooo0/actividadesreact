@@ -5,8 +5,7 @@ export default function EjContador() {
 
   return (
     <section className="card stack max-w-sm">
-      <div className="kicker">Ejercicio 01</div>
-      <h2 className="section-title">Contador</h2>
+      <h2 className="section-title">Ej 01 – Contador</h2>
 
       <p className="text-sm text-zinc-400">
         Valor actual:{" "}

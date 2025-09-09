@@ -5,8 +5,7 @@ export default function EjMostrarTexto() {
 
   return (
     <section className="card stack max-w-sm">
-      <div className="kicker">Ejercicio 02</div>
-      <h2 className="section-title">Mostrar texto</h2>
+      <h2 className="section-title"> Ej 02 – Mostrar texto</h2>
 
       <input
         className="input"
