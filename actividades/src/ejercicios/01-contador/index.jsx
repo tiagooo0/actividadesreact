@@ -2,11 +2,23 @@ import { useState } from "react";
 
 export default function EjContador() {
   const [count, setCount] = useState(0);
+
   return (
-    <div>
-      <h2>Ej 01 – Contador</h2>
-      <p>Valor: {count}</p>
-      <button onClick={() => setCount(count + 1)}>+1</button>
-    </div>
+    <section className="card stack max-w-sm">
+      <div className="kicker">Ejercicio 01</div>
+      <h2 className="section-title">Contador</h2>
+
+      <p className="text-sm text-zinc-400">
+        Valor actual:{" "}
+        <span className="font-semibold text-zinc-100">{count}</span>
+      </p>
+
+      <button
+        onClick={() => setCount(count + 1)}
+        className="btn btn-primary w-full"
+      >
+        +1
+      </button>
+    </section>
   );
 }
